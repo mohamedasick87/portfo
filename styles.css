@@ -1,0 +1,265 @@
+#home {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 50px 0;
+}
+
+#home .display-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#home .lead {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+#home img {
+    border: 5px solid #fff; /* White border around the image */
+    border-radius: 50%; /* Make it circular */
+    max-width: 80%; /* Control the image size */
+}
+h2 {
+    font-weight: bold;
+    color: #007bff;
+}
+.bg-primary-light {
+    background-color: #f0f9ff;
+}
+
+/* About and Education Section */
+#about-education .col-lg-6 {
+    margin-bottom: 30px;
+}
+#about-education p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+#about-education .bg-light {
+    background-color: #e9ecef !important;
+}
+#about-education strong {
+    font-weight: 600;
+}
+
+/* Skills Section */
+#skills img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+#skills p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Projects Section */
+#projects .card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+#projects .card-title {
+    color: #007bff;
+    font-weight: bold;
+}
+#projects ul {
+    padding-left: 20px;
+}
+#projects ul li {
+    line-height: 1.6;
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.1rem;
+}
+#contact .social-icons a {
+    color: #333;
+    transition: color 0.3s ease;
+}
+#contact .social-icons a:hover {
+    color: #007bff;
+}
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Slide-in from Bottom */
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Floating Animation */
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Hover Grow Animation */
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Image Rotate Animation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Example Usage on Elements */
+h2 {
+    animation: fadeIn 1s ease-in-out;
+}
+
+#about-education p {
+    animation: slideInBottom 1.5s ease-out;
+}
+
+.card-title {
+    animation: bounce 1s ease infinite;
+}
+
+img {
+    animation: floating 2s ease-in-out infinite;
+}
+
+.btn:hover {
+    animation: grow 0.3s forwards;
+}
+
+.social-icons a:hover {
+    animation: rotate 1s ease-in-out;
+}
+/* Navbar Link Hover Transition */
+nav.navbar .nav-link {
+    color: #fff !important; /* White text */
+    transition: color 0.3s ease-in-out;
+}
+nav.navbar .nav-link:hover {
+    color: #007bff !important; /* Blue hover effect */
+}
+
+/* Image Hover Transition */
+#home img {
+    border: 5px solid #fff; /* White border around the image */
+    border-radius: 50%; /* Make it circular */
+    max-width: 80%; /* Control the image size */
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+#home img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    border-color: #007bff; /* Change border color on hover */
+}
+
+/* Button Hover Transition */
+.btn {
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.btn:hover {
+    background-color: #0056b3 !important; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Social Icons Hover Transition */
+.social-icons a {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.social-icons a:hover {
+    color: #007bff !important; /* Change icon color on hover */
+    transform: scale(1.2); /* Grow icons on hover */
+}
+
+/* Project Card Hover Effect */
+.card {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    transform: translateY(-10px); /* Lift the card slightly on hover */
+}
+:root {
+    --bg-color: #000;
+    --text-color: #fff;
+    --link-color: #007bff;
+    --border-color: #fff;
+    --btn-bg-color: #007bff;
+    --btn-hover-bg-color: #0056b3;
+}
+
+.light-mode {
+    --bg-color: #fff;
+    --text-color: #000;
+    --link-color: #007bff;
+    --border-color: #000;
+    --btn-bg-color: #007bff;
+    --btn-hover-bg-color: #0056b3;
+}
+
+/* Apply the CSS variables */
+body, nav.navbar, #home, .bg-light, #about-education, #projects, #contact {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+nav.navbar .navbar-brand,
+nav.navbar .nav-link {
+    color: var(--text-color) !important;
+}
+
+nav.navbar .nav-link:hover {
+    color: var(--link-color) !important;
+}
+
+#home img {
+    border-color: var(--border-color);
+}
+
+.btn {
+    background-color: var(--btn-bg-color);
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-bg-color);
+}
