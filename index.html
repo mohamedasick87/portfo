@@ -112,15 +112,29 @@
                     <p>"First, solve the problem. Then, write the code."</p>
                     <a href="resumeaFINAL.pdf" class="btn btn-primary mt-3">DOWNLOAD RESUME</a>
                 </div>
-                
+    
                 <!-- Right Column: Image -->
                 <div class="col-lg-6 d-flex justify-content-center mt-4 mt-lg-0">
-                    <img src="WhatsApp_Image_2024-10-12_at_18.32.43_3add0546-removebg-preview.png" alt="Mohamed Asick" class="img-fluid rounded-circle" style="max-width: 80%;height: auto;">
+                    <img src="WhatsApp_Image_2024-10-12_at_18.32.43_3add0546-removebg-preview.png" alt="Mohamed Asick" class="img-fluid" style="max-width: 80%; height: auto; border-radius: 0;">
                 </div>
             </div>
         </div>
     </section>
     
+    <style>
+        /* Initial off-position (slightly tilted or shifted) */
+        img {
+            transform: rotate(10deg) translateX(-20px); /* Tilt and shift */
+            transition: transform 0.5s ease-in-out; /* Smooth transition */
+        }
+    
+        /* On hover, return to the correct position */
+        img:hover {
+            transform: rotate(0deg) translateX(0); /* Correct position */
+        }
+    </style>
+    
+
 
     <!-- About & Education Section -->
     <section id="about-education" class="py-5">
