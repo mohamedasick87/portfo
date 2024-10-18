@@ -172,25 +172,69 @@
                 </div>
                 <!-- Education Details -->
                 <div class="col-lg-6">
-                    <h2>My Educational Details</h2>
-                    <div class="bg-light p-3 rounded">
-                        <strong>Current Degree:</strong>
-                        <p>Pursuing B.E. in Computer Science and Engineering at Kings College of Engineering, CGPA: 7.51</p>
+                    <!-- Full outer box for the education section -->
+                    <div class="education-container bg-light p-4 rounded">
+                        <h2>My Educational Details</h2>
+                
+                        <!-- Sub-box for Current Degree -->
+                        <div class="education-subbox">
+                            <strong>Current Degree:</strong>
+                            <p>Pursuing B.E. in Computer Science and Engineering at Kings College of Engineering, CGPA: 7.51</p>
+                        </div>
+                
+                        <!-- Sub-box for 12th Grade -->
+                        <div class="education-subbox">
+                            <strong>12th Grade:</strong>
+                            <p>Scored 82.3% at St. Marcina's Hr. Sec. School</p>
+                        </div>
+                
+                        <!-- Sub-box for 10th Grade -->
+                        <div class="education-subbox">
+                            <strong>10th Grade:</strong>
+                            <p>Scored 75% at St. Marcina's Hr. Sec. School</p>
+                        </div>
                     </div>
-                    <div class="bg-light p-3 rounded my-3">
-                        <strong>12th Grade:</strong>
-                        <p>Scored 82.3% at St. Marcina's Hr. Sec. School</p>
-                    </div>
-                    <div class="bg-light p-3 rounded">
-                        <strong>10th Grade:</strong>
-                        <p>Scored 75% at St. Marcina's Hr. Sec. School</p>
-                    </div>
+                </div>
+                
+                
                 </div>
             </div>
         </div>
     </section>
     
     
+    <style>
+        /* Styling for the full outer box */
+        .education-container {
+            background-color: #f8f9fa; /* Light background color */
+            border: 2px solid #ddd; /* Light border for the box */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Padding around the content */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+    
+        /* Styling for each sub-box inside the education container */
+        .education-subbox {
+            background-color: #ffffff; /* White background for sub-boxes */
+            border: 1px solid #ddd; /* Subtle border around sub-boxes */
+            border-radius: 8px; /* Rounded corners for sub-boxes */
+            padding: 15px; /* Padding inside the sub-boxes */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for each sub-box */
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+        }
+    
+        /* Hover effect for each sub-box */
+        .education-subbox:hover {
+            transform: scale(1.05); /* Slightly scale up */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow depth */
+            background-color: #f0f0f0; /* Light gray background on hover */
+        }
+    
+        /* Adjust margin between sub-boxes */
+        .education-subbox:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    </style>
 
     <!-- Projects Section -->
     <section id="skills" class="py-5 bg-light">
@@ -239,46 +283,61 @@
     </style>
     <!-- Projects Section -->
     <section id="projects" class="py-5">
-        <div class="container" style="color: black;">
-            <h2 class="text-center">My Projects</h2>
-            <div class="row">
-                <!-- Project 1 -->
-                <div class="col-lg-6">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title">Restaurant Billing System Application Using Python Tkinter</h3>
-                            <ul>
-                                <li>Developed a restaurant billing system application using Python and Tkinter for efficient order management and billing.</li>
-                                <li>Designed the system to be scalable, accommodating the specific needs of different restaurant types.</li>
-                                <li>Facilitated both waiter and manager operations, improving overall restaurant efficiency.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="col-lg-6">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title">Email Sending Application Using Python</h3>
-                            <ul>
-                                <li>Created a Python-based email sending application allowing users to send emails to multiple recipients across platforms like Gmail, Yahoo Mail, and Outlook.</li>
-                                <li>Designed a user-friendly interface for easy composition and attachment of emails.</li>
-                                <li>Collaborated effectively with team members, ensuring timely completion of project milestones within budget.</li>
-                            </ul>
-                        </div>
+    <div class="container" style="color: black;">
+        <!-- Box for the heading -->
+        <div class="projects-heading bg-light p-4 rounded mb-4 text-center">
+            <h2>My Projects</h2>
+        </div>
+        
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Restaurant Billing System Application Using Python Tkinter</h3>
+                        <ul>
+                            <li>Developed a restaurant billing system application using Python and Tkinter for efficient order management and billing.</li>
+                            <li>Designed the system to be scalable, accommodating the specific needs of different restaurant types.</li>
+                            <li>Facilitated both waiter and manager operations, improving overall restaurant efficiency.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <center>
+            <!-- Project 2 -->
+            <div class="col-lg-6">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h3 class="card-title">InternIQ Platform</h3>
-                        <p>A platform to connect interns with companies, providing personalized candidate recommendations.</p>
+                        <h3 class="card-title">Email Sending Application Using Python</h3>
+                        <ul>
+                            <li>Created a Python-based email sending application allowing users to send emails to multiple recipients across platforms like Gmail, Yahoo Mail, and Outlook.</li>
+                            <li>Designed a user-friendly interface for easy composition and attachment of emails.</li>
+                            <li>Collaborated effectively with team members, ensuring timely completion of project milestones within budget.</li>
+                        </ul>
                     </div>
                 </div>
-            </center>
+            </div>
         </div>
-    </section>
+        <center>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">InternIQ Platform</h3>
+                    <p>A platform to connect interns with companies, providing personalized candidate recommendations.</p>
+                </div>
+            </div>
+        </center>
+    </div>
+</section>
+
+<style>
+    /* Styling for the projects heading box */
+    .projects-heading {
+        background-color: #f8f9fa; /* Light background color */
+        border: 2px solid #ddd; /* Light border for the box */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+</style>
+
 
     <!-- Contact Section -->
     <section id="contact" class="py-5 bg-light">
@@ -411,3 +470,4 @@
 
 
 
+<!--height and width-->
