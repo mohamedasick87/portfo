@@ -250,21 +250,33 @@ body {
 /*certificate boxxx starting*/
 .certificates-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    justify-content: center; /* Centers certificates in the container */
+    padding: 10px; /* Optional padding for the container */
 }
 
 .certificate {
-    margin: 10px;
-    text-align: center;
+    margin: 10px; /* Space around each certificate */
+    text-align: center; /* Center text within the certificate */
+    flex: 1 1 300px; /* Allows certificates to grow and shrink */
+    max-width: 300px; /* Max width for each certificate */
 }
 
 .certificate img {
-    width: 600px; /* Adjust as needed */
-    height: 500px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .certificate {
+        flex: 1 1 90%; /* Allows certificates to take up more space on small screens */
+        max-width: 90%; /* Set max width to 90% for smaller screens */
+    }
+}
+
 .center{
     text-align: center;
 }
