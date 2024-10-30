@@ -309,4 +309,48 @@ body {
     background-color: #6ba8ce; /* Change color on hover */
 }
 
+
+
+
+.certificate {
+    margin: 10px;
+    text-align: center;
+    position: relative; /* Position relative for text overlay */
+    overflow: hidden; /* Hide overflow for scaling effect */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+.certificate img {
+    width: 100%; /* Make the image responsive */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Transition for image */
+}
+
+.certificate h4 {
+    opacity: 0; /* Initially hidden */
+    position: absolute; /* Position absolute to center over image */
+    bottom: 10%; /* Position text at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center text */
+    color: white; /* Change to white for contrast */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 5px 10px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* Hover effects */
+.certificate:hover {
+    transform: scale(1.05); /* Slightly enlarge the certificate */
+}
+
+.certificate:hover img {
+    transform: scale(1.1); /* Slightly enlarge the image */
+}
+
+.certificate:hover h4 {
+    opacity: 1; /* Fade in text on hover */
+}
+
 /*certificate boxxx end*/
