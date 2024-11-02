@@ -62,3 +62,19 @@ function closePopup() {
     document.getElementById("popup").style.display = "none";
 }
 //finished
+
+//navbaar issue
+    document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        const navbarCollapse = document.querySelector(".navbar-collapse");
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                // Collapse the navbar on mobile view after clicking a link
+                if (window.innerWidth < 992) { // Bootstrap's lg breakpoint
+                    navbarCollapse.classList.remove("show");
+                }
+            });
+        });
+    });
+//navbar issue .
