@@ -78,3 +78,23 @@ function closePopup() {
         });
     });
 //navbar issue .
+
+//photo icon issue
+function toggleFlip() {
+    const flipCard = document.getElementById("flipCard");
+    flipCard.classList.toggle("flipped");
+}
+
+//return to back form of photo
+// Reapply the animation class to the heading
+function triggerCoolAnimation() {
+    const heading = document.querySelector('.cool-animated-heading');
+    heading.classList.remove('cool-animated-heading'); // Remove the class
+    void heading.offsetWidth; // Trigger reflow
+    heading.classList.add('cool-animated-heading'); // Reapply the class
+}
+
+// Example: Trigger animation on flip card
+document.querySelector('#flipCard').addEventListener('click', triggerCoolAnimation);
+
+//photo issue solved

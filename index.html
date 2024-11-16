@@ -81,20 +81,25 @@
     
                 <!-- Right Column: Flip Card for Image and Details -->
                 <div class="col-lg-6 d-flex justify-content-center mt-4 mt-lg-0">
-                    <div class="flip-card">
+                    <div class="flip-card" id="flipCard">
                         <div class="flip-card-inner">
                             <!-- Front Side: Image -->
                             <div class="flip-card-front">
                                 <img src="pic3.png" alt="Mohamed Asick" class="profile-image img-fluid">
+                                <div class="info-icon" onclick="toggleFlip()">ℹ️</div>
                             </div>
                             <!-- Back Side: Details -->
                             <div class="flip-card-back">
-                                <h3>About me</h3>
-                                <p>Age: 20</p>
-                                <p>Height: 5'5"</p>
-                                <p>Weight: 60kg</p>
-                                <p>Nationality:Indian</p>
-                                <p>Languages Known:Tamil,English</p>
+                                <div class="back-content">
+                                    <h3 class="cool-animated-heading">About Me</h3>
+
+                                    <p>Age: 20</p>
+                                    <p>Height: 5'5"</p>
+                                    <p>Weight: 60kg</p>
+                                    <p>Nationality: Indian</p>
+                                    <p>Languages Known: Tamil, English</p>
+                                    <div class="return-icon" onclick="toggleFlip()">↩️</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -102,6 +107,17 @@
             </div>
         </div>
     </section>
+    
+    
+    
+    <script>
+        // JavaScript to handle touch events on mobile devices
+        const flipCard = document.getElementById("flipCard");
+    
+        flipCard.addEventListener("touchstart", function() {
+            flipCard.classList.toggle("flipped");
+        });
+    </script>
     
     
     

@@ -81,11 +81,12 @@ body {
 /* Initial off-position (slightly tilted or shifted) */
 
 /* Flip Card Container */
+/* Flip Card Container */
 .flip-card {
-    width: 500px;  /* Increase width for a larger square */
-    height: 500px;  /* Increase height for a larger square */
-    perspective: 1000px;  /* 3D effect */
-    margin: auto;  /* Center the flip card */
+    width: 500px;
+    height: 500px;
+    perspective: 1000px;
+    margin: auto;
 }
 
 /* Inner Container with Flip Effect */
@@ -97,7 +98,7 @@ body {
     transform-style: preserve-3d;
 }
 
-/* Front Side: Image */
+/* Front and Back Sides */
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -108,42 +109,123 @@ body {
     align-items: center;
 }
 
-/* Square Image Styling */
+/* Front Side: Image */
 .flip-card-front img {
-    width: 90%;       /* Increase width of the image */
-    height: 90%;      /* Increase height of the image */
-    object-fit: cover; /* Ensure image fills the space */
-    border-radius: 0;  /* Ensure no border-radius to keep it square */
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+/* Info Icon (Front Side) */
+.info-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
 }
 
 /* Back Side: Details */
 .flip-card-back {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: #333;
-    color: #fff;
+    color: white;
     transform: rotateY(180deg);
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
+    overflow-y: auto; /* Allow scrolling for large content */
 }
 
-/* Flip on hover */
-.flip-card:hover .flip-card-inner {
+/* Back Content */
+.back-content {
+    text-align: center;
+    max-width: 90%;
+    font-size: 1rem; /* Default font size */
+}
+
+/* Reduce padding and font size on smaller screens */
+.back-content p {
+    margin: 5px 0;
+}
+
+/* Return Icon (Back Side) */
+.return-icon {
+    margin-top: 20px;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.return-icon:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Flip on Click */
+.flip-card.flipped .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-/* Responsive Styling */
+
+/* Animation Keyframes */
+/* Keyframes for Cool Animation */
+@keyframes coolestAnimation {
+    0% {
+        transform: translateY(-100%) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(10px) scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Cool Animated Heading Style */
+.cool-animated-heading {
+    font-size: 2rem; /* Adjust font size as needed */
+    color: #0f64ec; /* Gold color for added style */
+    text-shadow: 0 0 10px #042546, 0 0 20px #75a9f1; /* Glowing effect */
+    animation: coolestAnimation 1.5s ease-out; /* Duration and easing */
+    margin-bottom: 20px; /* Space below heading */
+    text-align: center; /* Center align the text */
+    letter-spacing: 2px; /* Adds spacing between letters for style */
+}
+
+
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .flip-card {
-        width: 250px;  /* Adjust the width on smaller screens */
-        height: 250px;
+        width: 250px;
+        height: 300px; /* Reduced height for smaller screens */
     }
 
-    .flip-card-front img {
-        width: 85%;  /* Adjust image size for smaller screens */
-        height: 85%;
+    .flip-card-back {
+        padding: 10px;
+    }
+
+    .back-content {
+        font-size: 0.85rem; /* Reduce font size */
+    }
+
+    .info-icon, .return-icon {
+        font-size: 16px;
+        padding: 6px;
     }
 }
 
@@ -230,36 +312,58 @@ body {
 
 
 /*social icons*/
-/* Ensure consistent spacing for all social icons */
+/* Social Icons Styling */
+/* Social Icons Styling */
 .social-icons a {
-    color: #333;
+    color: #333;  /* Default color */
     text-decoration: none;
     margin-right: 15px;
-    /* Adjust as needed */
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s; /* Smooth transition */
+    display: inline-block; /* Make sure the icon is treated as a block element */
 }
 
+/* No margin-right for the last icon */
 .social-icons a:last-child {
     margin-right: 0;
 }
 
-/* Hover effect for icons */
-.social-icons a:hover {
-    color: #147eef;
+/* Hover effect for Instagram (merging pink, yellow, and purple) */
+.social-icons a[href="https://www.instagram.com/cozitzasick_/"]:hover {
+    color: transparent;  /* Make icon color transparent */
+    background: linear-gradient(45deg, #e1306c, #f5a623, #8e44ad); /* Gradient of pink, yellow, purple */
+    -webkit-background-clip: text; /* Clip gradient to text */
+    background-clip: text;  /* For other browsers */
+    transform: scale(1.2); /* Slightly enlarge the icon */
+}
+
+/* Hover effect for LinkedIn (blue) */
+.social-icons a[href="https://www.linkedin.com/in/mohamed-asick-a-54580a257"]:hover {
+    color: #0077b5;  /* LinkedIn blue */
+    transform: scale(1.2);
+}
+
+/* Hover effect for GitHub (black) */
+.social-icons a[href="https://github.com/mohamedasick87"]:hover {
+    color: #000000;  /* GitHub black */
+    transform: scale(1.2);
+}
+
+/* Hover effect for Phone (blue) */
+.social-icons a[href="#"]:hover {
+    color: #147eef;  /* Blue */
+    transform: scale(1.2);
 }
 
 /* Popup styling */
 .popup {
-    display: none;
-    /* Hidden by default */
+    display: none; /* Hidden by default */
     position: fixed;
     z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
 }
 
 .popup-content {
