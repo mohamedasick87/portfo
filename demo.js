@@ -22,36 +22,32 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//welcome screen start
 
+const moon = document.querySelector('.moon');
+const letters = document.querySelectorAll('.welcome-message span');
 
-document.addEventListener('DOMContentLoaded', () => {
-    const welcomeScreen = document.getElementById('welcome-screen');
-    const welcomeText = document.querySelector('.welcome-message');
+// Total animation duration of the moon
+const animationDuration = 4; // seconds
+const letterRevealDelay = animationDuration / letters.length; // Time for the moon to cross each letter
 
-    // Split the welcome text into individual characters
-    const welcomeTextContent = welcomeText.textContent;
-    welcomeText.innerHTML = '';
-
-    // Wrap each character in a span for animation
-    [...welcomeTextContent].forEach((letter, index) => {
-        const span = document.createElement('span');
-        span.textContent = letter;
-        welcomeText.appendChild(span);
-
-        // Apply animation delay for each letter
-        span.style.animationDelay = `${index * 0.2}s`;
-    });
-
-    // Wait for the animation to complete, then remove the welcome screen
+// Reveal letters as the moon crosses them
+letters.forEach((letter, index) => {
     setTimeout(() => {
-        welcomeScreen.style.animation = 'fadeOut 1s forwards';
-    }, 2000); // Keep welcome screen for 2 seconds
-
-    // Show main content after the welcome screen fades out
-    setTimeout(() => {
-        document.getElementById('main-content').style.display = 'block';
-    }, 3000); // Adjust to match the fade-out animation
+        letter.style.opacity = '1'; // Make the letter visible
+    }, index * letterRevealDelay * 1000); // Convert seconds to milliseconds
 });
+
+// Make the moon disappear after crossing the final letter
+setTimeout(() => {
+    moon.style.animation = 'moonFadeOut 0.5s forwards'; // Fade out the moon
+}, animationDuration * 1000);
+
+// Optional: Hide the welcome screen after the animation
+setTimeout(() => {
+    document.getElementById('welcome-screen').style.display = 'none';
+}, (animationDuration + 0.5) * 1000); // Wait for fade-out to complete
+//welcome screen ends
 
 //pop up message for phone icon
 function showPopup() {

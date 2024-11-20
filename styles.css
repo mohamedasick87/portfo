@@ -396,8 +396,9 @@ body {
 
 
 /* Style for the welcome message */
-/* Initial styles for the welcome message */
-/* Full-screen black background */
+    /* Welcome Screen */
+/* Fullscreen Welcome Screen */
+/* Fullscreen Welcome Screen */
 #welcome-screen {
     position: fixed;
     top: 0;
@@ -409,46 +410,68 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 9999;
+    overflow: hidden;
+}
+
+/* Welcome container to position moon and text */
+.welcome-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Moon Animation */
+.moon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, #fdfdfd, #aaaaaa);
+    border-radius: 50%;
+    animation: moonMove 4s linear forwards;
+    z-index: 2;
+}
+
+/* Move the moon only across the text */
+@keyframes moonMove {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 100%;
+    }
 }
 
 /* Welcome message styling */
 .welcome-message {
-    font-size: 3rem;
+    display: flex;
+    font-size: 4rem; /* Larger font size for impact */
     color: silver;
-    /* Silver text */
-    display: inline-block;
-    letter-spacing: 5px;
+    letter-spacing: 8px; /* Space between letters for better readability */
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif; /* Cool, modern font */
+    position: relative;
 }
 
-/* Typing animation for each letter */
-@keyframes fadeInLetter {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Apply animation to each letter */
+/* Add a glowing effect to the text */
 .welcome-message span {
-    opacity: 0;
-    animation: fadeInLetter 0.2s ease forwards;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 0px 0px 10px #ff3434, 0px 0px 20px #1c71e8;
 }
 
-/* Fade out the welcome screen */
-@keyframes fadeOut {
-    0% {
+/* Fade-out animation for the moon */
+@keyframes moonFadeOut {
+    from {
         opacity: 1;
     }
-
-    100% {
+    to {
         opacity: 0;
-        visibility: hidden;
     }
 }
 
+/*welcome screen ends*/
 
 
 .hover-gradient-card {
