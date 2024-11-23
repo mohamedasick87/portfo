@@ -1,26 +1,24 @@
  /* Navbar Styling */
- nav.navbar {
-    background-color: #000;
-    /* Black background */
+nav.navbar {
+    background: linear-gradient(45deg, #03243f, #000000);
+    /* Gradient background */
+    border-bottom: 2px solid #007bff; /* Optional: Add a highlight at the bottom */
 }
 
 nav.navbar .navbar-brand,
 nav.navbar .nav-link {
-    color: #fff !important;
-    /* White text */
+    color: #fff !important; /* White text */
 }
 
 nav.navbar .nav-link:hover {
-    color: #007bff !important;
-    /* Blue hover effect */
+    color: #00aaff !important; /* Light blue hover effect */
 }
 
 /* Home Section Styling */
 #home {
-    background-color: #000;
-    /* Black background */
-    color: #fff;
-    /* White text */
+    background: linear-gradient(45deg, #03243f, #000000);
+    /* Gradient background */
+    color: #fff; /* White text */
     padding: 50px 0;
 }
 
@@ -35,13 +33,11 @@ nav.navbar .nav-link:hover {
 }
 
 #home img {
-    border: 5px solid #fff;
-    /* White border around the image */
-    border-radius: 50%;
-    /* Make it circular */
-    max-width: 80%;
-    /* Control the image size */
+    border: 5px solid #fff; /* White border around the image */
+    border-radius: 50%; /* Make it circular */
+    max-width: 80%; /* Control the image size */
 }
+
 
 /* Light Mode Styling */
 body.light-mode {
@@ -231,44 +227,97 @@ body {
 
 
 
+/* About Me Card Styling */
+#about {
+    background: linear-gradient(45deg, #03243f, #000000);
+    /* Gradient background */
+    border: 2px solid #007bff;
+    /* Blue border */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Shadow for depth */
+    color: silver;
+    /* Silver text */
+}
+
+/* About Me Heading */
+#about h2 {
+    color: #00aaff;
+    /* Light blue heading text */
+    font-family: 'Poppins', sans-serif;
+    /* Stylish font */
+    text-transform: uppercase;
+    /* Uppercase for emphasis */
+    letter-spacing: 2px;
+}
+
+/* About Me Paragraphs */
+#about p {
+    color: silver;
+    /* Silver text */
+    line-height: 1.6;
+    /* Better readability */
+    font-size: 1.1rem;
+    /* Slightly larger text */
+}
+
+/* Hover Effect for About Me Section */
+#about:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    /* Increase shadow depth on hover */
+    transform: scale(1.02);
+    /* Slightly scale up on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
 /* Styling for the full outer box */
 .education-container {
-    background-color: #f8f9fa;
-    /* Light background color */
-    border: 2px solid #ddd;
-    /* Light border for the box */
+    background: linear-gradient(45deg, #03243f, #000000);
+    /* Gradient background */
+    border: 2px solid #007bff;
+    /* Blue border for highlight */
     border-radius: 10px;
     /* Rounded corners */
     padding: 20px;
     /* Padding around the content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Deeper shadow for depth */
+    color: silver;
+    /* Silver text */
 }
 
 /* Styling for each sub-box inside the education container */
 .education-subbox {
-    background-color: #ffffff;
-    /* White background for sub-boxes */
-    border: 1px solid #ddd;
-    /* Subtle border around sub-boxes */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Semi-transparent white for sub-boxes */
+    border: 1px solid #007bff;
+    /* Blue border around sub-boxes */
     border-radius: 8px;
     /* Rounded corners for sub-boxes */
     padding: 15px;
     /* Padding inside the sub-boxes */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     /* Subtle shadow for each sub-box */
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     /* Smooth transition */
+    color: silver;
+    /* Silver text */
 }
 
 /* Hover effect for each sub-box */
 .education-subbox:hover {
     transform: scale(1.05);
     /* Slightly scale up */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     /* Increase shadow depth */
-    background-color: #f0f0f0;
-    /* Light gray background on hover */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Slightly brighter background on hover */
 }
 
 /* Adjust margin between sub-boxes */
@@ -276,50 +325,143 @@ body {
     margin-bottom: 15px;
 }
 
+/* Heading Styling */
+.education-container h2 {
+    color: #00aaff;
+    /* Highlight heading text in a light blue */
+    font-family: 'Poppins', sans-serif;
+    /* Stylish font */
+    text-transform: uppercase;
+    /* Uppercase for emphasis */
+    letter-spacing: 2px;
+}
+
 
 /* Basic styling for the skill images */
-.skill-image {
-    width: 100px;
-    /* Set a fixed width */
-    height: 100px;
-    /* Set a fixed height */
-    object-fit: cover;
-    /* Ensure the images cover the box without distortion */
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+/* Outer box for the Skills section */
+/* Outer box for the Skills section */
+/* Outer box for the Skills section */
+#skills {
+    background: linear-gradient(45deg, #03243f, #000000); /* Same gradient as other sections */
+     /* Rounded corners for the section */
+    padding: 20px; /* Inner padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    background-clip: padding-box; /* Ensures the gradient stops at the border edge */
+    color: white; /* Text inside will be white for better contrast */
 }
 
-/* Hover effect: Slight scale and rotation */
-.skill-image:hover {
-    transform: scale(1.2) rotate(10deg);
-    /* Slight zoom-in and rotation */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    /* Adding a shadow effect */
+/* Add a wrapper to keep uniform spacing */
+#skills .container {
+    background: inherit; /* Inherit the gradient background */
+    padding: 20px;
+    border-radius: 15px; /* Maintain the border radius for consistency */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Enhanced shadow effect */
+    border: 2px solid #03243f; /* Consistent border color */
 }
+
+
+/* Style for each skill card */
+.skill-image {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    object-fit: cover; /* Cover the image area without distortion */
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    border-radius: 10px; /* Rounded corners for the images */
+    background-color: white; /* Ensure a white background for consistency */
+}
+
+/* Hover effect for the skill images */
+.skill-image:hover {
+    transform: scale(1.2) rotate(10deg); /* Slight zoom-in and rotation */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+/* Align text and style it */
+#skills p {
+    color: white; /* Text color for better contrast */
+    font-weight: bold; /* Bold the skill names */
+    margin-top: 10px; /* Add space above the text */
+}
+
+/* Space and alignment between skill images */
+#skills .col-6 {
+    margin-bottom: 20px; /* Space between rows of images */
+}
+
+/* Center and highlight the section title */
+#skills h2 {
+    color: #007bff; /* Blue color for the title */
+    font-weight: bold;
+    margin-bottom: 30px; /* Add space below the title */
+}
+
 
 
 /* Styling for the projects heading box */
+/* Projects Section Heading */
 .projects-heading {
-    background-color: #f8f9fa;
-    /* Light background color */
-    border: 2px solid #ddd;
-    /* Light border for the box */
-    border-radius: 10px;
-    /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
+    background: linear-gradient(45deg, #03243f, #000000); /* Consistent gradient background */
+    color: white; /* Text color for contrast */
+    border: 2px solid #03243f; /* Border color matches the gradient theme */
+    border-radius: 15px; /* Rounded corners for uniformity */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for depth */
+    padding: 20px; /* Consistent spacing */
+    text-align: center;
 }
+
+/* Hover Gradient Cards */
+.hover-gradient-card {
+    background: linear-gradient(45deg, #03243f, #000000); /* Default neutral background */
+    color: white; /* Text color for readability */
+    border: 2px solid transparent; /* Transparent border to accommodate hover effect */
+    border-radius: 15px; /* Rounded corners for consistency */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: background 0.5s ease, color 0.5s ease, transform 0.3s ease, box-shadow 0.5s ease;
+}
+
+/* Hover Effect for Cards */
+.hover-gradient-card:hover {
+    background: linear-gradient(45deg, #03243f, #000000); /* Gradient background on hover */
+    color: white; /* Text color changes to contrast the gradient */
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Stronger shadow for hover state */
+    border: 2px solid #03243f; /* Border color matches the hover gradient */
+}
+
+/* Links within the hover cards */
+.hover-gradient-card a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Ensure the text color inherits the hover state */
+    transition: color 0.3s ease; /* Smooth text color transition */
+}
+
+.hover-gradient-card:hover a {
+    color: white; /* Ensures link text color matches the hover state */
+}
+
 
 
 
 /*social icons*/
 /* Social Icons Styling */
+/* General Section Styling */
+#contact-section {
+    background: linear-gradient(45deg, #03243f, #000000); /* Gradient background */
+    padding: 50px 0;
+    color: white; /* Default text color */
+    border-radius: 10px; /* Rounded edges for the section */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Depth-enhancing shadow */
+    font-weight: bold; /* Make all text bold */
+}
+
+
 /* Social Icons Styling */
 .social-icons a {
-    color: #333;  /* Default color */
+    color: white; /* Default white icon color */
     text-decoration: none;
     margin-right: 15px;
     transition: color 0.3s, transform 0.3s; /* Smooth transition */
-    display: inline-block; /* Make sure the icon is treated as a block element */
+    display: inline-block; /* Icon treated as block element */
 }
 
 /* No margin-right for the last icon */
@@ -327,51 +469,52 @@ body {
     margin-right: 0;
 }
 
-/* Hover effect for Instagram (merging pink, yellow, and purple) */
+/* Instagram Hover Effect */
 .social-icons a[href="https://www.instagram.com/cozitzasick_/"]:hover {
-    color: transparent;  /* Make icon color transparent */
-    background: linear-gradient(45deg, #e1306c, #f5a623, #8e44ad); /* Gradient of pink, yellow, purple */
-    -webkit-background-clip: text; /* Clip gradient to text */
-    background-clip: text;  /* For other browsers */
-    transform: scale(1.2); /* Slightly enlarge the icon */
+    color: transparent; /* Transparent to allow gradient */
+    background: linear-gradient(45deg, #e1306c, #f5a623, #8e44ad); /* Instagram gradient */
+    -webkit-background-clip: text; /* Gradient on text for WebKit */
+    background-clip: text; /* Gradient clip for other browsers */
+    transform: scale(1.2); /* Slight enlargement */
 }
 
-/* Hover effect for LinkedIn (blue) */
+/* LinkedIn Hover Effect */
 .social-icons a[href="https://www.linkedin.com/in/mohamed-asick-a-54580a257"]:hover {
-    color: #0077b5;  /* LinkedIn blue */
-    transform: scale(1.2);
+    color: #0077b5; /* LinkedIn blue */
+    transform: scale(1.2); /* Slight enlargement */
 }
 
-/* Hover effect for GitHub (black) */
+/* GitHub Hover Effect */
 .social-icons a[href="https://github.com/mohamedasick87"]:hover {
-    color: #000000;  /* GitHub black */
-    transform: scale(1.2);
+    color: #ffffff; /* Pure white */
+    transform: scale(1.2); /* Slight enlargement */
 }
 
-/* Hover effect for Phone (blue) */
+/* Phone Hover Effect */
 .social-icons a[href="#"]:hover {
-    color: #147eef;  /* Blue */
-    transform: scale(1.2);
+    color: #00d8ff; /* Cyan for the phone icon */
+    transform: scale(1.2); /* Slight enlargement */
 }
 
-/* Popup styling */
+/* Popup Styling */
 .popup {
-    display: none; /* Hidden by default */
+    display: none; /* Initially hidden */
     position: fixed;
     z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
 }
 
+/* Popup Content Styling */
 .popup-content {
-    background-color: #f0f0f0;
-    color: black;
+    background-color: #03243f; /* Dark theme */
+    color: white; /* White text for readability */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Smooth corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Shadow for depth */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -381,9 +524,9 @@ body {
     text-align: center;
 }
 
-/* Close button */
+/* Close Button */
 .close {
-    color: #333;
+    color: #ffffff; /* White close button */
     float: right;
     font-size: 24px;
     font-weight: bold;
@@ -391,7 +534,14 @@ body {
 }
 
 .close:hover {
-    color: #ff0000;
+    color: #ff0000; /* Red hover effect for close button */
+}
+
+/* Footer Text Styling */
+#contact-section p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #cccccc; /* Subtle footer text color */
 }
 
 
@@ -474,49 +624,66 @@ body {
 /*welcome screen ends*/
 
 
-.hover-gradient-card {
-    background-color: #f0f0f0;
-    /* Default background color */
-    color: black;
-    /* Default text color */
-    border-radius: 10px;
-    /* Optional: Rounded corners */
-    box-shadow: 0 4px 8px rgba(240, 230, 230, 0.849);
-    /* Optional: Adds a shadow */
-    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    /* Smooth transition */
-}
 
-.hover-gradient-card:hover {
-    background: linear-gradient(45deg, #03243f, #000000);
-    /* Gradient background on hover */
-    color: white;
-    /* Change text color on hover to contrast with the gradient */
-    transform: scale(1.05);
-    /* Optional: Slightly enlarge the card on hover */
-}
 
 /*certificate boxxx starting*/
-.certificates-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* Allows wrapping for smaller screens */
-    justify-content: center;
-    /* Centers certificates in the container */
-    padding: 10px;
-    /* Optional padding for the container */
+/* Heading Styling */
+.certificates-heading {
+    background: linear-gradient(45deg, #03243f, #000000); /* Your desired gradient */
+    color: white; /* White text for contrast */
+    padding: 15px;
+    border-radius: 15px; /* Smooth rounded edges */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Depth-enhancing shadow */
+    display: inline-block; /* Centered and boxed heading */
 }
 
-.certificate {
-    margin: 10px;
-    /* Space around each certificate */
-    text-align: center;
-    /* Center text within the certificate */
-    flex: 1 1 300px;
-    /* Allows certificates to grow and shrink */
-    max-width: 300px;
-    /* Max width for each certificate */
+/* Certificates Container Styling */
+.certificates-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    justify-content: center; /* Centers the certificates */
+    gap: 20px; /* Space between each certificate */
+    padding: 10px; /* Padding around the container */
 }
+
+/* Individual Certificate Styling */
+.certificate {
+    background-color: #03243f; /* Base color */
+    color: white; /* Text color */
+    border: 3px solid #03243f; /* Outer box border matching background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: background 0.5s ease, color 0.5s ease, transform 0.3s ease, box-shadow 0.5s ease;
+    text-align: center;
+    padding: 20px; /* Space inside each certificate */
+    max-width: 300px; /* Maximum width for a certificate */
+    flex: 1 1 300px; /* Flexible layout */
+}
+
+/* Certificate Hover Effect */
+.certificate:hover {
+    background: linear-gradient(45deg, #03243f, #000000); /* Gradient hover */
+    color: white; /* Ensure consistent white text */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+    border: 3px solid #ffffff; /* Optional white border on hover */
+}
+
+/* Certificate Image Styling */
+.certificate-image {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Smooth edges for the image */
+    margin-bottom: 10px; /* Spacing below the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow around image */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling on hover */
+}
+
+/* Image Hover Effect */
+.certificate-image:hover {
+    transform: scale(1.1); /* Slight zoom-in for interactivity */
+}
+
 
 .certificate img {
     width: 100%;
@@ -544,7 +711,7 @@ body {
 }
 
 .new-box {
-    background-color: #1c1d1e;
+    background: linear-gradient(45deg, #03243f, #000000);
     /* Light background color */
     border: 2px solid #151414;
     /* Light border */

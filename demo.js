@@ -1,26 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
-
-    // Set initial state based on body class
-    if (body.classList.contains('dark-mode')) {
-        themeToggle.textContent = 'Switch to Light Mode';
-    } else {
-        themeToggle.textContent = 'Switch to Dark Mode';
-    }
-
-    themeToggle.addEventListener('click', function () {
-        if (body.classList.contains('light-mode')) {
-            body.classList.remove('light-mode');
-            body.classList.add('dark-mode');
-            themeToggle.textContent = 'Switch to Light Mode';
-        } else {
-            body.classList.remove('dark-mode');
-            body.classList.add('light-mode');
-            themeToggle.textContent = 'Switch to Dark Mode';
-        }
-    });
-});
 
 //welcome screen start
 

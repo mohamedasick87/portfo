@@ -63,7 +63,7 @@
                     <a class="nav-link" href="#contact-section">Contact</a>
 
                 </ul>
-                <button id="theme-toggle" class="btn btn-secondary ms-lg-3">Switch to Light Mode</button>
+                
             </div>
         </div>
     </nav>
@@ -135,13 +135,13 @@
     
 
     <!-- About & Education Section -->
-    <section id="about-education" class="py-5">
-        <div class="container" style="color: black;">
+    <section id="about-education" class="py-5" style="background: linear-gradient(45deg, #03243f, #000000);;">
+        <div class="container">
             <div class="row">
                 <!-- About Me Card -->
                 <div class="col-lg-6">
-                    <div class="card">
-                        <div class="card-body" id="about">
+                    <div class="card" id="about">
+                        <div class="card-body">
                             <h2>About Me</h2>
                             <p>Hello! I'm Mohamed Asick, a passionate Full Stack Developer with a strong foundation in both front-end and back-end technologies. I hold a degree in Computer Science and Engineering from Kings College of Engineering, where I developed a deep interest in building dynamic web applications and creating innovative solutions.</p>
                             <p>My expertise includes HTML, CSS, JavaScript. I also have experience in database management with SQL, enabling me to efficiently handle data and optimize application performance. As an aspiring Data Analyst, I am keen on leveraging data-driven insights to enhance user experiences and make informed decisions.</p>
@@ -149,24 +149,25 @@
                         </div>
                     </div>
                 </div>
+                
+    
                 <!-- Education Details -->
                 <div class="col-lg-6">
-                    <!-- Full outer box for the education section -->
-                    <div class="education-container bg-light p-4 rounded">
+                    <div class="education-container">
                         <h2>My Educational Details</h2>
-                
+    
                         <!-- Sub-box for Current Degree -->
                         <div class="education-subbox">
                             <strong>Current Degree:</strong>
                             <p>Pursuing B.E. in Computer Science and Engineering at Kings College of Engineering, CGPA: 7.51</p>
                         </div>
-                
+    
                         <!-- Sub-box for 12th Grade -->
                         <div class="education-subbox">
                             <strong>12th Grade:</strong>
                             <p>Scored 82.3% at St. Marcina's Hr. Sec. School</p>
                         </div>
-                
+    
                         <!-- Sub-box for 10th Grade -->
                         <div class="education-subbox">
                             <strong>10th Grade:</strong>
@@ -174,12 +175,10 @@
                         </div>
                     </div>
                 </div>
-                
-                
-                </div>
             </div>
         </div>
     </section>
+    
     
     
    
@@ -216,7 +215,7 @@
 
    
     <!-- Projects Section -->
-    <section id="projects" class="py-5">
+    <section id="projects" class="py-5" style="background: linear-gradient(45deg, #03243f, #000000);">
     <div class="container" style="color: black;">
         <!-- Box for the heading -->
         <div class="projects-heading bg-light p-4 rounded mb-4 text-center">
@@ -263,12 +262,12 @@
             </a>
         
             <a href="certificates.html" style="text-decoration: none; color: inherit;">
-                <section id="certificates" class="py-5 bg-light">
-                    <div class="container" style="color: black;">
-                        <h2 class="text-center">Certificates</h2>
+                <section id="certificates" class="py-5">
+                    <div class="container">
+                        <h2 class="text-center certificates-heading">Certificates</h2>
                         <div class="certificates-container">
-                            <div class="certificate">
-                                <img src="1.png" alt="Certificate 1">
+                            <div class="certificate hover-gradient-card">
+                                <img src="1.png" alt="Certificate 1" class="certificate-image">
                                 <h4>View all Certificates</h4>
                                 <h5>Click above to view all Certificates</h5>
                             </div>
@@ -277,44 +276,45 @@
                     </div>
                 </section>
             </a>
+            
         </center>
         <!-- Unique ID for Contact section -->  
         <hr>
-            <section id="contact-section" class="py-5 bg-light"> <!-- Unique ID for Contact section -->
-                <div class="container text-center" style="color: black;">
-                    <h2 class="text-gradient animated-text">Contact Me</h2>
-
-                    <!-- This title will not redirect -->
-                    <p>If you'd like to get in touch, feel free to email me at 
-                        <a href="mailto:mohamedasick199@gmail.com">mohamedasick199@gmail.com</a>.
-                    </p>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/cozitzasick_/" target="_blank">
-                            <i class="fab fa-instagram fa-2x"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/mohamed-asick-a-54580a257" target="_blank">
-                            <i class="fab fa-linkedin fa-2x"></i>
-                        </a>
-                        <a href="https://github.com/mohamedasick87" target="_blank">
-                            <i class="fab fa-github fa-2x"></i>
-                        </a>
-                        <a href="#" onclick="showPopup()">
-                            <i class="fas fa-phone fa-2x"></i>
-                        </a>
-                    </div>
-        
-                    <!-- Popup for displaying the phone number -->
-                    <div id="popup" class="popup">
-                        <div class="popup-content">
-                            <span class="close" onclick="closePopup()">&times;</span>
-                            <h5>Contact Number: +91 7339191640</h5>
-                        </div>
-                    </div>
-        
-                    <br>
-                    © 2024 All rights reserved by MOHAMED ASICK
+        <section id="contact-section" class="py-5">
+            <div class="container text-center" style="color: white;">
+                <h2 class="text-gradient animated-text">Contact Me</h2>
+                <!-- This title will not redirect -->
+                <p>If you'd like to get in touch, feel free to email me at 
+                    <a href="mailto:mohamedasick199@gmail.com" style="color: #ffffff;">mohamedasick199@gmail.com</a>.
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/cozitzasick_/" target="_blank">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohamed-asick-a-54580a257" target="_blank">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/mohamedasick87" target="_blank">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="#" onclick="showPopup()">
+                        <i class="fas fa-phone fa-2x"></i>
+                    </a>
                 </div>
-            </section>
+        
+                <!-- Popup for displaying the phone number -->
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <span class="close" onclick="closePopup()">&times;</span>
+                        <h5>Contact Number: +91 7339191640</h5>
+                    </div>
+                </div>
+        
+                <br>
+                <p>© 2024 All rights reserved by MOHAMED ASICK</p>
+            </div>
+        </section>
+        
         
         
     
