@@ -356,7 +356,7 @@ body {
     padding: 20px;
     border-radius: 15px; /* Maintain the border radius for consistency */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Enhanced shadow effect */
-    border: 2px solid #03243f; /* Consistent border color */
+    border: 2px solid #007bff; /* Consistent border color */
 }
 
 
@@ -390,8 +390,8 @@ body {
 
 /* Center and highlight the section title */
 #skills h2 {
-    color: #007bff; /* Blue color for the title */
-    font-weight: bold;
+    color: #00aaff; /* Blue color for the title */
+    
     margin-bottom: 30px; /* Add space below the title */
 }
 
@@ -402,7 +402,7 @@ body {
 .projects-heading {
     background: linear-gradient(45deg, #03243f, #000000); /* Consistent gradient background */
     color: white; /* Text color for contrast */
-    border: 2px solid #03243f; /* Border color matches the gradient theme */
+    border: 2px solid #007bff; /* Border color matches the gradient theme */
     border-radius: 15px; /* Rounded corners for uniformity */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for depth */
     padding: 20px; /* Consistent spacing */
@@ -413,7 +413,7 @@ body {
 .hover-gradient-card {
     background: linear-gradient(45deg, #03243f, #000000); /* Default neutral background */
     color: white; /* Text color for readability */
-    border: 2px solid transparent; /* Transparent border to accommodate hover effect */
+    border: 2px solid #dee5ed;  /* Transparent border to accommodate hover effect */
     border-radius: 15px; /* Rounded corners for consistency */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     transition: background 0.5s ease, color 0.5s ease, transform 0.3s ease, box-shadow 0.5s ease;
@@ -425,7 +425,7 @@ body {
     color: white; /* Text color changes to contrast the gradient */
     transform: scale(1.05); /* Slight zoom-in effect */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Stronger shadow for hover state */
-    border: 2px solid #03243f; /* Border color matches the hover gradient */
+    border: 2px solid #007bff;  /* Border color matches the hover gradient */
 }
 
 /* Links within the hover cards */
@@ -450,6 +450,7 @@ body {
     padding: 50px 0;
     color: white; /* Default text color */
     border-radius: 10px; /* Rounded edges for the section */
+    border: 2px solid #007bff; 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Depth-enhancing shadow */
     font-weight: bold; /* Make all text bold */
 }
@@ -633,6 +634,7 @@ body {
     color: white; /* White text for contrast */
     padding: 15px;
     border-radius: 15px; /* Smooth rounded edges */
+    border: 2px solid #007bff; 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Depth-enhancing shadow */
     display: inline-block; /* Centered and boxed heading */
 }
@@ -650,7 +652,7 @@ body {
 .certificate {
     background-color: #03243f; /* Base color */
     color: white; /* Text color */
-    border: 3px solid #03243f; /* Outer box border matching background */
+    border: 3px solid #007bff; /* Outer box border matching background */
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     transition: background 0.5s ease, color 0.5s ease, transform 0.3s ease, box-shadow 0.5s ease;
