@@ -72,6 +72,42 @@ nav.navbar .nav-link:hover {
     max-width: 80%; /* Control the image size */
 }
 
+/* Resume Button Styling */
+.resume-button {
+    display: inline-flex;
+    align-items: center; /* Align text and icon vertically */
+    justify-content: center; /* Center content */
+    background-color: #d8e4f0; /* Button background color */
+    color: rgb(0, 0, 0); /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: fit-content; /* Fit content width */
+    gap: 8px; /* Space between text and icon */
+}
+
+.resume-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.resume-button i {
+    font-size: 18px; /* Size of the icon */
+}
+
+/* For small screens: Adjust padding */
+@media (max-width: 576px) {
+    .resume-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+
 
 /* Light Mode Styling */
 body.light-mode {
