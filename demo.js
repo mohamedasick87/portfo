@@ -71,3 +71,29 @@ function triggerCoolAnimation() {
 document.querySelector('#flipCard').addEventListener('click', triggerCoolAnimation);
 
 //photo issue solved
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section"); // All sections with IDs
+    const navLinks = document.querySelectorAll(".nav-link"); // Navbar links
+
+    const observerOptions = {
+        root: null, // Viewport
+        threshold: 0.6, // 60% visibility
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            const id = entry.target.id;
+            const navLink = document.querySelector(`.nav-link[href="#${id}"]`);
+
+            if (entry.isIntersecting) {
+                // Highlight the current section
+                navLinks.forEach((link) => link.classList.remove("active"));
+                if (navLink) navLink.classList.add("active");
+            }
+        });
+    }, observerOptions);
+
+    // Observe all sections
+    sections.forEach((section) => observer.observe(section));
+});

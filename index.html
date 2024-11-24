@@ -12,7 +12,7 @@
     
    
 </head>
-<body class="light-mode"> <!-- Set default mode -->
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" tabindex="0"> <!-- Set default mode -->
 
     <!--Welcome message-->
 
@@ -43,27 +43,23 @@
         <div class="container">
             <!-- Logo or Email Display Based on Screen Size -->
             <a class="navbar-brand d-lg-none" href="mailto:mohamedasick87@gmail.com">
-                <img src="a.jpeg" alt="Logo" class="navbar-logo"> <!-- Add a small logo image -->
+                <img src="a.jpeg" alt="Logo" class="navbar-logo">
             </a>
             <a class="navbar-brand d-none d-lg-block" href="mailto:mohamedasick87@gmail.com">mohamedasick87@gmail.com</a>
     
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+    
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                   
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    
                     <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
-                    <a class="nav-link" href="#contact-section">Contact</a>
-
+                    <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
                 </ul>
-                
             </div>
         </div>
     </nav>
@@ -207,6 +203,14 @@
                 <div class="col-6 col-md-2 mb-4">
                     <img src="power bi image.png" alt="Power BI" class="skill-image img-fluid">
                     <p>Power BI</p>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <img src="msoffice.jpg" alt="JavaScript" class="skill-image img-fluid">
+                    <p>MS OFFICE</p>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <img src="github image.jpg" alt="JavaScript" class="skill-image img-fluid">
+                    <p>GIT HUB</p>
                 </div>
             </div>
         </div>

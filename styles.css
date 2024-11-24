@@ -14,6 +14,40 @@ nav.navbar .nav-link:hover {
     color: #00aaff !important; /* Light blue hover effect */
 }
 
+/* Default style for navigation links */
+.nav-link {
+    position: relative; /* Allows us to position the underline */
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+/* Add underline animation */
+.nav-link::after {
+    content: ""; /* Pseudo-element for the underline */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Space between the link and the underline */
+    width: 0%; /* Start with no underline */
+    height: 2px;
+    background-color: #00aaff; /* Underline color */
+    transition: width 0.4s ease; /* Smoothly grow the underline */
+}
+
+/* On hover or active state */
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%; /* Full-width underline */
+}
+
+/* Transition color for active links */
+.nav-link.active {
+    color: #00aaff !important; /* Highlighted color */
+}
+
+
+
+
 /* Home Section Styling */
 #home {
     background: linear-gradient(45deg, #03243f, #000000);
