@@ -45,6 +45,26 @@ nav.navbar .nav-link:hover {
     color: #00aaff !important; /* Highlighted color */
 }
 
+/* font for nav bar mohmaedasick */
+.navbar-brand {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.8rem;
+    color: #333;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+@font-face {
+    font-family: 'Showcard Gothic';
+    src: url('fonts/ShowcardGothic.woff2') format('woff2'),
+         url('fonts/ShowcardGothic.woff') format('woff'),
+         url('fonts/ShowcardGothic.ttf') format('truetype');
+}
+
+.navbar-brand {
+    font-family: 'Showcard Gothic', sans-serif;
+}
+/* font for nav bar mohmaedasick */
+
 
 
 
