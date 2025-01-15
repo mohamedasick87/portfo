@@ -28,12 +28,20 @@ setTimeout(() => {
 
 //pop up message for phone icon
 function showPopup() {
-    document.getElementById("popup").style.display = "block";
+    const popup = document.getElementById("popup");
+    popup.classList.add("show"); // Add the 'show' class to display the popup
 }
 
 function closePopup() {
-    document.getElementById("popup").style.display = "none";
+    const popup = document.getElementById("popup");
+    popup.classList.remove("show"); // Remove the 'show' class to hide the popup
 }
+
+
+
+
+
+
 //finished
 
 //navbaar issue
