@@ -106,13 +106,3 @@ document.addEventListener("DOMContentLoaded", function () {
     sections.forEach((section) => observer.observe(section));
 });
 
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./app";
-
-ReactDOM.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>,
-    document.getElementById("root")
-);
