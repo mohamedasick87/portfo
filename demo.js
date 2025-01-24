@@ -1,6 +1,8 @@
 
 //welcome screen start
 
+const { Analytics } = require("@vercel/analytics/next");
+
 const moon = document.querySelector('.moon');
 const letters = document.querySelectorAll('.welcome-message span');
 
@@ -40,7 +42,7 @@ function closePopup() {
 
 
 
-
+<Analytics>import { Analytics } from "@vercel/analytics/react"</Analytics>
 
 //finished
 
