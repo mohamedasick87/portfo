@@ -1,7 +1,7 @@
 
 //welcome screen start
 
-const { Analytics } = require("@vercel/analytics/next");
+
 
 const moon = document.querySelector('.moon');
 const letters = document.querySelectorAll('.welcome-message span');
@@ -41,8 +41,6 @@ function closePopup() {
 
 
 
-
-<Analytics>import { Analytics } from "@vercel/analytics/react"</Analytics>
 
 //finished
 
@@ -107,3 +105,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Observe all sections
     sections.forEach((section) => observer.observe(section));
 });
+
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./app";
+
+ReactDOM.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById("root")
+);
