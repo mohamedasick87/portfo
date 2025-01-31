@@ -598,9 +598,10 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    backdrop-filter: blur(5px); /* Add a blur effect to the background */
 }
 
-/* Show Popup with Scale-Up Animation */
+/* Show Popup with Enhanced Animation */
 .popup.show {
     display: block; /* Make the popup visible */
     animation: fadeIn 0.3s ease-in-out; /* Background fade-in animation */
@@ -620,7 +621,7 @@ body {
     text-align: center;
     width: 80%;
     max-width: 400px;
-    animation: scaleUp 0.5s ease-in-out forwards; /* Apply scale-up animation */
+    animation: popupAnimation 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; /* Enhanced animation */
 }
 
 /* Close Button */
@@ -630,6 +631,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .close:hover {
@@ -646,20 +648,22 @@ body {
     }
 }
 
-@keyframes scaleUp {
+@keyframes popupAnimation {
     0% {
-        transform: translate(-50%, -50%) scale(0.8); /* Start smaller */
+        transform: translate(-50%, -50%) scale(0.5); /* Start smaller */
         opacity: 0; /* Start invisible */
     }
-    70% {
-        transform: translate(-50%, -50%) scale(1.1); /* Slight overscale for bounce effect */
+    50% {
+        transform: translate(-50%, -50%) scale(1.2); /* Overshoot for bounce effect */
         opacity: 1; /* Fully visible */
     }
+    70% {
+        transform: translate(-50%, -50%) scale(0.9); /* Slight bounce back */
+    }
     100% {
-        transform: translate(-50%, -50%) scale(1); /* Back to normal size */
+        transform: translate(-50%, -50%) scale(1); /* Settle to normal size */
     }
 }
-
 
 
 /* Style for the welcome message */
